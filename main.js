@@ -25,7 +25,7 @@ var twoDaysMin = document.getElementById("two_min_temp")
 var twoDaysCondition = document.getElementById("two_days_condition")
 
 //API
-async function getWeather(countryDes){
+async function getWeather(countryDes = "cairo"){
     var weather = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=8636e8dd02c4473b8f3145328241506&q=${countryDes}&days=7`)
     var weatherData = await weather.json()
     return weatherData
