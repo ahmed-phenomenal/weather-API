@@ -1,0 +1,217 @@
+/*Global Rules*/
+body{
+    font-family: "Roboto", sans-serif;
+    transition: 3s;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/*#009AD8*/
+/*#1E202B*/
+/*#bfc1c8*/
+/*#323544*/
+/* #FAF400 */
+
+/*navbar*/
+.navbar{
+    background-color: #1E202B;
+    color: white;
+}
+.navbar .sections ul{
+    list-style: none;
+    display: flex;
+}
+.navbar .sections ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    margin: 0 10px;
+    padding: 7.5px 30px;
+}
+.navbar .sections ul .active a{
+    color: #009AD8;
+    border-radius: 30px;
+    border: 2px solid #009AD8; /* Adjust the border color and width as needed */
+}
+.navbar .sections ul li a::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: 2px solid #009AD8; /* Adjust the border color and width as needed */
+    opacity: 0;
+}
+.navbar .sections ul li a:hover::after{
+    opacity: 1;
+    color: #009AD8;
+}
+.navbar .sections ul li a:hover{
+    color: #009AD8;
+}
+.navbar .weather img{
+    height: 35px;
+    width: 70px;
+    display: inline-block;
+}
+.navbar .weather a{
+    color: white;
+    position: relative;
+    top: 0px;
+}
+.navbar .weather a p{
+    display: inline-block;
+    transform: translateY(10px);
+}
+.navbar .weather a p span{
+    color: #bfc1c8;
+    font-size: 10px;
+}
+
+/*main content*/
+.content .input{
+    background-image: url("../Weather/banner.png");
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content .input .input-container{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.content .input .input-container input{
+    width: 100%;
+    background-color: #1E202B;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 25px;
+}
+.content .input .input-container button{
+    color: white;
+    background-color: #009AD8;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    left: 100%;
+    transform: translateX(-105%);
+}
+.content .weather{
+    height: 400px;
+    background-color: #1E202B;
+}
+.content .weather .cards{
+    width: 100%;
+    display: flex;
+    transform: translateY(-30%);
+}
+.content .weather .cards .card{
+    width: 30%;
+    background-color: white;
+    border: none;
+}
+.content .weather .cards .one .title{
+    display: flex;
+    justify-content: space-between;
+    color: #bfc1c8;
+    background-color: #2D303D;
+    height: 30px;
+}
+.content .weather .cards .one{
+    background-color:#323544;
+    width: 40%;
+}
+.content .weather .cards .one .elements{
+    display: flex;
+    justify-content: space-around;
+    color: #bfc1c8;
+    font-weight: 300;
+    width: 70%;
+}
+.content .weather .cards .one .elements .element i{
+    padding: 0 5px;
+}
+.content .weather .cards .two  .title, .content .weather .cards .three .title{
+    text-align: center;
+    color: #bfc1c8;
+    height: 30px;
+}
+.content .weather .cards .two .title{
+background-color: #222531;
+}
+.content .weather .cards .three .title{
+    background-color: #2D303D;
+}
+.content .weather .cards .two  .content, .content .weather .cards .three .content{
+    text-align: center;
+}
+.content .weather .cards .two  .content{
+    background-color: #262936;
+    height: 450px;
+}
+.content .weather .cards .three .content{
+    background-color: #323544;
+    height: 450px;
+}
+
+/*footer*/
+.footer{
+    background-color: #262936;
+    height: 300px;
+}
+.footer .content{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .content .input-container{
+    height: 200px;
+    padding: 40px 0;
+    width: 70%;
+}
+.footer .content .input-container input{
+    width: 100%;
+    background-color: #1E202B;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 25px;
+}
+.footer .content .input-container button{
+    color: white;
+    background-color: #009AD8;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    left: 65.5%;
+    transform: translate(-105% , 13%);
+}
+.footer .sections ul{
+    list-style: none;
+    display: flex;
+    transform: translate(-50%,150%);
+}
+.footer .sections ul li{
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: #1E202B;
+    margin: 0 2px;
+    color: #009AD8;
+}
+.footer .sections ul li:hover{
+    color:  #1E202B; 
+    background-color: #009AD8;
+    cursor: pointer;
+}
+.footer p{
+    color: #bfc1c8;
+    transform: translateY(-300%);
+}
